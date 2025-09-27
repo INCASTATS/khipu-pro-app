@@ -1,0 +1,18 @@
+/* --- ============================================ --- */
+/* --- ARCHIVO MAESTRO DE ESTILOS --- */
+/* --- ============================================ --- */
+/* Este archivo no contiene estilos directamente.
+    Su única función es importar los parciales en el orden correcto.
+    1. Base: Cimientos y estilos globales.
+    2. Layout: Estructura y apariencia de los componentes.
+    3. Themes: Colores y estilos visuales que pueden sobreescribir el layout.
+*/
+
+/* 1. Importa los estilos base, utilidades y animaciones */
+@import '_base.css';
+
+/* 2. Importa la estructura y el diseño de los componentes */
+@import '_layout.css';
+
+/* 3. Importa todos los temas (se cargan al final para mayor especificidad) */
+@import '_themes.css';

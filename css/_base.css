@@ -1,0 +1,83 @@
+/* --- ============================================ --- */
+/* ---               ANIMACIONES GLOBALES           --- */
+/* --- ============================================ --- */
+
+/* Animación para la entrada de elementos en la página de selección */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación para la aparición de modales */
+@keyframes scaleInFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Efecto de pulsación para botones */
+@keyframes button-press {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.97); }
+    100% { transform: scale(1); }
+}
+
+/* Animación de rebote para el indicador de scroll */
+@keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); } 
+    40% { transform: translateX(-50%) translateY(-20px); } 
+    60% { transform: translateX(-50%) translateY(-10px); } 
+}
+
+
+/* --- ============================================ --- */
+/* ---             ESTILOS BASE Y UTILIDADES        --- */
+/* --- ============================================ --- */
+
+html, body { 
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+}
+
+body.analysis-active {
+    background-color: var(--bg-premier);
+}
+
+/* --- CLASES DE UTILIDAD --- */
+
+.hidden { 
+    display: none !important; 
+}
+
+.no-scrollbar::-webkit-scrollbar { 
+    display: none; 
+}
+
+.no-scrollbar { 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+/* Clases para aplicar la animación con diferentes retrasos */
+.animate-fade-in-slide-up {
+    animation: fadeInSlideUp 0.6s ease-out forwards;
+    opacity: 0; 
+}
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-700 { animation-delay: 700ms; }

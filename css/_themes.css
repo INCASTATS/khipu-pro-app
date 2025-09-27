@@ -1,0 +1,244 @@
+/* --- ============================================ --- */
+/* ---     TEMAS PARA LA PÁGINA DE ANÁLISIS       --- */
+/* --- ============================================ --- */
+
+/* Tema Premier League 30 Años (Predeterminado) */
+html[data-theme="premier-30"] {
+    --bg-premier: #1a001a; /* Púrpura Oscuro */
+    --bg-card: #2d002a;
+    --border-color: rgba(255, 74, 74, 0.2);
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --accent-lime: #ff4a4a; /* Rojo/Naranja Vibrante */
+    --accent-green: #8a2be2; /* Azul Violeta */
+    --pitch-green: #2d6a4f;
+    --pitch-green-light: #40916c;
+    --bg-modal-backdrop: rgba(26, 0, 26, 0.8);
+    --bg-modal-content: radial-gradient(circle at top, #2d002a, #1a001a);
+    --bg-inner-panel: rgba(0,0,0,0.2);
+    --bg-hover: rgba(255, 74, 74, 0.1);
+    --bg-button-secondary: rgba(255,255,255,0.1);
+    --stake-bar-inactive: rgba(255,255,255,0.2);
+}
+
+/* Tema Premier League (Vibrante) */
+html[data-theme="premier-league"] {
+    --bg-premier: #310038;
+    --bg-card: #450c4c;
+    --border-color: rgba(0, 230, 118, 0.3);
+    --text-primary: #ffffff;
+    --text-secondary: #e8e8e8;
+    --accent-lime: #90f068;
+    --accent-green: #00e676;
+    --pitch-green: #285a43;
+    --pitch-green-light: #3b825f;
+    --bg-modal-backdrop: rgba(20, 0, 24, 0.85);
+    --bg-modal-content: #450c4c;
+    --bg-inner-panel: rgba(0, 230, 118, 0.1);
+    --bg-hover: rgba(0, 230, 118, 0.2);
+    --bg-button-secondary: rgba(0,0,0,0.2);
+    --stake-bar-inactive: rgba(255,255,255,0.2);
+}
+
+/* Tema Inca Light (Multicolor) */
+html[data-theme="inca-light"] {
+    --bg-premier: #F1F5F9;
+    --bg-card: #FFFFFF;
+    --border-color: #E2E8F0;
+    --text-primary: #0F172A;
+    --text-secondary: #64748B;
+    --accent-lime: #29F4FF;
+    --accent-green: #E900E9;
+    --pitch-green: #6EE7B7;
+    --pitch-green-light: #A7F3D0;
+    --bg-modal-backdrop: rgba(241, 245, 249, 0.8);
+    --bg-modal-content: #FFFFFF;
+    --bg-inner-panel: #F1F5F9;
+    --bg-hover: #E2E8F0;
+    --bg-button-secondary: #E2E8F0;
+    --stake-bar-inactive: #E2E8F0;
+}
+
+/* Tema Champions League Night */
+html[data-theme="champions-night"] {
+    --bg-premier: #0a0f35;
+    --bg-card: #131b4f;
+    --border-color: rgba(125, 249, 255, 0.4);
+    --text-primary: #ffffff;
+    --text-secondary: #e8eaf6;
+    --accent-lime: #ffffff;
+    --accent-green: #7df9ff;
+    --pitch-green: #1a4314;
+    --pitch-green-light: #2a621c;
+    --bg-modal-backdrop: rgba(13, 17, 43, 0.85);
+    --bg-modal-content: radial-gradient(circle at top, #131b4f, #0a0f35);
+    --bg-inner-panel: rgba(125, 249, 255, 0.08);
+    --bg-hover: rgba(125, 249, 255, 0.12);
+    --bg-button-secondary: rgba(255, 255, 255, 0.1);
+    --stake-bar-inactive: rgba(255, 255, 255, 0.2);
+}
+
+/* Tema Champions League Stars */
+html[data-theme="champions-stars"] {
+    --bg-premier: #0d1b3e;
+    --bg-card: #1a2f6b;
+    --border-color: rgba(0, 191, 255, 0.4);
+    --text-primary: #ffffff;
+    --text-secondary: #e0e6f2;
+    --accent-lime: #89e3f1;
+    --accent-green: #00bfff;
+    --pitch-green: #3a5d44;
+    --pitch-green-light: #5f8967;
+    --bg-modal-backdrop: rgba(13, 27, 62, 0.8);
+    --bg-modal-content: #1a2f6b;
+    --bg-inner-panel: rgba(0, 191, 255, 0.1);
+    --bg-hover: rgba(0, 191, 255, 0.15);
+    --bg-button-secondary: rgba(255,255,255,0.1);
+    --stake-bar-inactive: rgba(255, 255, 255, 0.2);
+}
+
+/* Tema Champions League Final */
+html[data-theme="champions-final"] {
+    --bg-premier: #111111;
+    --bg-card: #282828;
+    --border-color: rgba(255, 223, 0, 0.6);
+    --text-primary: #ffffff;
+    --text-secondary: #dddddd;
+    --accent-lime: #FFDF00;
+    --accent-green: #FFFFFF;
+    --pitch-green: #224422;
+    --pitch-green-light: #336633;
+    --bg-modal-backdrop: rgba(0, 0, 0, 0.9);
+    --bg-modal-content: #282828;
+    --bg-inner-panel: rgba(255, 223, 0, 0.1);
+    --bg-hover: rgba(255, 223, 0, 0.2);
+    --bg-button-secondary: rgba(255, 255, 255, 0.1);
+    --stake-bar-inactive: rgba(255, 255, 255, 0.25);
+}
+
+/* --- TEMAS LA LIGA --- */
+html[data-theme="laliga-santander"] {
+    --bg-premier: #1d1d1d;
+    --bg-card: #2c2c2c;
+    --border-color: rgba(234, 46, 54, 0.4);
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --accent-lime: #ea2e36;
+    --accent-green: #ffffff;
+    --pitch-green: #3a5a40;
+    --pitch-green-light: #588157;
+    --bg-modal-backdrop: rgba(29, 29, 29, 0.85);
+    --bg-modal-content: radial-gradient(circle at top, #2c2c2c, #1d1d1d);
+    --bg-inner-panel: rgba(234, 46, 54, 0.08);
+    --bg-hover: rgba(234, 46, 54, 0.15);
+    --bg-button-secondary: rgba(255, 255, 255, 0.1);
+    --stake-bar-inactive: rgba(255, 255, 255, 0.2);
+}
+
+html[data-theme="el-clasico"] {
+    --bg-premier: #0a192f;
+    --bg-card: #172a46;
+    --border-color: rgba(255, 237, 0, 0.4);
+    --text-primary: #ffffff;
+    --text-secondary: #ccd6f6;
+    --accent-lime: #a80038;
+    --accent-green: #ffed00;
+    --pitch-green: #2e604b;
+    --pitch-green-light: #44886b;
+    --bg-modal-backdrop: rgba(10, 25, 47, 0.85);
+    --bg-modal-content: #172a46;
+    --bg-inner-panel: rgba(168, 0, 56, 0.1);
+    --bg-hover: rgba(168, 0, 56, 0.2);
+    --bg-button-secondary: rgba(255,255,255,0.1);
+    --stake-bar-inactive: rgba(255, 255, 255, 0.2);
+}
+
+html[data-theme="noche-derbi"] {
+    --bg-premier: #111;
+    --bg-card: #1f1f1f;
+    --border-color: rgba(255, 255, 255, 0.2);
+    --text-primary: #ffffff;
+    --text-secondary: #d1d1d1;
+    --accent-lime: #d11a2a;
+    --accent-green: #004ea1;
+    --pitch-green: #2a4e2a;
+    --pitch-green-light: #3f743f;
+    --bg-modal-backdrop: rgba(17, 17, 17, 0.9);
+    --bg-modal-content: #1f1f1f;
+    --bg-inner-panel: rgba(255, 255, 255, 0.05);
+    --bg-hover: rgba(209, 26, 42, 0.15);
+    --bg-button-secondary: rgba(255, 255, 255, 0.1);
+    --stake-bar-inactive: rgba(255, 255, 255, 0.25);
+}
+
+
+/* --- ============================================ --- */
+/* --- TEMAS PARA LA PÁGINA DE SELECCIÓN DE LIGAS --- */
+/* --- ============================================ --- */
+
+#page-selector[data-main-theme="terminal"] {
+    background-color: #0D1117; color: #E2E8F0;
+    background-image: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(56, 139, 253, 0.15), transparent), linear-gradient(rgba(17, 51, 77, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(17, 51, 77, 0.2) 1px, transparent 1px);
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+}
+#page-selector[data-main-theme="terminal"] #logo-image { border-color: rgba(88, 166, 255, 0.5); }
+#page-selector[data-main-theme="terminal"] #main-title { text-shadow: none; }
+#page-selector[data-main-theme="terminal"] .league-card { background: rgba(173, 216, 230, 0.1); border-color: #30363D; }
+#page-selector[data-main-theme="terminal"] .league-card:hover { border-color: #58A6FF; box-shadow: 0 0 30px -5px rgba(88, 166, 255, 0.25); background: rgba(173, 216, 230, 0.15); }
+#page-selector[data-main-theme="terminal"] .league-card::before { background: linear-gradient(120deg, transparent, rgba(88, 166, 255, 0.5), transparent); }
+
+#page-selector[data-main-theme="transmision"] {
+    background-color: #F0F3F6; color: #1A202C;
+    background-image: linear-gradient(45deg, #F7FAFC 25%, transparent 25%), linear-gradient(-45deg, #F7FAFC 25%, transparent 25%);
+    background-size: 20px 20px;
+}
+#page-selector[data-main-theme="transmision"] #logo-image { border-color: rgba(0, 82, 255, 0.5); }
+#page-selector[data-main-theme="transmision"] #main-title { color: #1A202C; text-shadow: none; }
+#page-selector[data-main-theme="transmision"] .league-card { background: #FFFFFF; border-color: #E2E8F0; }
+#page-selector[data-main-theme="transmision"] .league-card:hover { border-color: #0052FF; box-shadow: 0 0 30px -5px rgba(0, 82, 255, 0.25); }
+#page-selector[data-main-theme="transmision"] .league-card::before { background: linear-gradient(120deg, transparent, rgba(0, 82, 255, 0.5), transparent); }
+#page-selector[data-main-theme="transmision"] #main-subtitle, #page-selector[data-main-theme="transmision"] .league-card p, #page-selector[data-main-theme="transmision"] .scroll-down-indicator svg path { color: #4A5568; fill: #4A5568; }
+#page-selector[data-main-theme="transmision"] #main-settings-toggle-btn, #page-selector[data-main-theme="transmision"] #main-settings-panel { background: rgba(237, 242, 247, 0.8); border-color: #E2E8F0; color: #1A202C;}
+
+#page-selector[data-main-theme="pizarra"] {
+    background-color: #2A3C2E; color: #F7FAFC;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='10' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+#page-selector[data-main-theme="pizarra"] #logo-image { border-color: rgba(255, 235, 179, 0.5); }
+#page-selector[data-main-theme="pizarra"] #main-title { text-shadow: 0 0 10px rgba(255, 235, 179, 0.3); }
+#page-selector[data-main-theme="pizarra"] .league-card { background: rgba(200, 215, 225, 0.1); border-color: rgba(255, 235, 179, 0.2); }
+#page-selector[data-main-theme="pizarra"] .league-card:hover { border-color: #FFEB_B3; box-shadow: 0 0 30px -5px rgba(255, 235, 179, 0.25); background: rgba(200, 215, 225, 0.15); }
+#page-selector[data-main-theme="pizarra"] .league-card::before { background: linear-gradient(120deg, transparent, rgba(255, 235, 179, 0.5), transparent); }
+
+#page-selector[data-main-theme="informe"] {
+    background-color: #1A1B1D; color: #E5E7EB;
+    background-image: radial-gradient(ellipse at top, rgba(212, 175, 55, 0.1) 0%, transparent 50%), linear-gradient(45deg, #1F2023 25%, transparent 25%, transparent 75%, #1F2023 75%, #1F2023), linear-gradient(45deg, #1F2023 25%, transparent 25%, transparent 75%, #1F2023 75%, #1F2023);
+    background-size: 100% 100%, 8px 8px, 8px 8px;
+    background-position: 0 0, 0 0, 4px 4px;
+}
+#page-selector[data-main-theme="informe"] #logo-image { border-color: rgba(212, 175, 55, 0.5); }
+#page-selector[data-main-theme="informe"] #main-title { text-shadow: 0 0 15px rgba(212, 175, 55, 0.4); }
+#page-selector[data-main-theme="informe"] .league-card { background: rgba(200, 215, 225, 0.1); border-color: rgba(212, 175, 55, 0.25); }
+#page-selector[data-main-theme="informe"] .league-card:hover { border-color: #D4AF37; box-shadow: 0 0 30px -5px rgba(212, 175, 55, 0.25); background: rgba(200, 215, 225, 0.15); }
+#page-selector[data-main-theme="informe"] .league-card::before { background: linear-gradient(120deg, transparent, rgba(212, 175, 55, 0.5), transparent); }
+
+#page-selector[data-main-theme="hub"] {
+    background-color: #100F1C; color: #F5F3FF;
+    background-image: radial-gradient(circle at 100% 0%, rgba(236, 72, 153, 0.2) 0%, transparent 30%), radial-gradient(circle at 0% 100%, rgba(0, 245, 212, 0.2) 0%, transparent 30%);
+}
+#page-selector[data-main-theme="hub"] #logo-image { border-color: rgba(236, 72, 153, 0.5); }
+#page-selector[data-main-theme="hub"] #main-title { text-shadow: 0 0 15px #EC4899, 0 0 25px #EC4899; }
+#page-selector[data-main-theme="hub"] .league-card { background: rgba(236, 72, 153, 0.1); border-color: rgba(124, 58, 237, 0.3); }
+#page-selector[data-main-theme="hub"] .league-card:hover { border-color: #EC4899; box-shadow: 0 0 30px -5px rgba(236, 72, 153, 0.25); background: rgba(236, 72, 153, 0.15); }
+#page-selector[data-main-theme="hub"] .league-card::before { background: linear-gradient(120deg, transparent, rgba(236, 72, 153, 0.5), transparent); }
+
+#page-selector[data-main-theme="galactico"] {
+    background-color: #111827; color: #F9FAFB;
+    background-image: radial-gradient(circle at 1% 1%, rgba(209, 213, 219, 0.1), transparent 25%), radial-gradient(circle at 99% 99%, rgba(156, 163, 175, 0.1), transparent 25%);
+}
+#page-selector[data-main-theme="galactico"] #logo-image { border-color: rgba(192, 192, 192, 0.5); }
+#page-selector[data-main-theme="galactico"] #main-title { background: linear-gradient(90deg, #E5E7EB, #9CA3AF, #E5E7EB); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 10px rgba(229, 231, 235, 0.2); }
+#page-selector[data-main-theme="galactico"] .league-card { background: rgba(55, 65, 81, 0.2); border-color: #4B5563; }
+#page-selector[data-main-theme="galactico"] .league-card:hover { border-color: #D1D5DB; box-shadow: 0 0 30px -5px rgba(209, 213, 219, 0.25); background: rgba(75, 85, 99, 0.3); }
+#page-selector[data-main-theme="galactico"] .league-card::before { background: linear-gradient(120deg, transparent, rgba(229, 231, 235, 0.3), transparent); }
+#page-selector[data-main-theme="galactico"] #main-settings-toggle-btn, #page-selector[data-main-theme="galactico"] #main-settings-panel { background: rgba(17, 24, 39, 0.8); border-color: #4B5563; color: #F9FAFB; }
