@@ -19,7 +19,7 @@ export default async function handler(req, res) {
         }
 
         // Paso 4: Construir la URL y el cuerpo para la petición a la API de Gemini
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro-latest:generateContent?key=${GEMINI_API_KEY}`;
+        const url = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-pro-latest:generateContent?key=${GEMINI_API_KEY}`;
 
         const requestBody = {
             contents: [{
