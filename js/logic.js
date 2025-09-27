@@ -217,25 +217,20 @@ export function readFileAsJson(file) {
 }
 
 // --- ============================================ ---
-// --- ON-DEVICE AI INTEGRATION (NO API KEY) ---
+// --- AI INTEGRATION VIA SECURE BACKEND ---
 // --- ============================================ ---
 
 export let uploadedInjuryImagesHome = [];
 export let uploadedInjuryImagesAway = [];
 export let uploadedOddsImages = [];
 
-/**
- * Llama a nuestro backend seguro que se comunica con la API de Gemini.
- * @param {object} payload - El objeto con el prompt para la IA.
- * @returns {Promise<object>} - La respuesta JSON parseada desde la IA.
- */
 async function callAI(payload) {
     try {
         const prompt = payload.contents[0].parts[0].text;
 
-        // **IMPORTANTE**: Reemplaza esto con la URL de tu backend una vez que lo despliegues (ej. en Vercel).
-        // Si estás probando localmente, podría ser 'http://localhost:3000/api/get-gemini-analysis'
-        const API_BACKEND_URL = 'URL_DE_TU_BACKEND/api/get-gemini-analysis';
+        // **ESTA ES LA LÍNEA MÁS IMPORTANTE**
+        // Apunta a tu backend desplegado en Vercel
+        const API_BACKEND_URL = 'https://khipu-pro-app.vercel.app/api/get-gemini-analysis';
 
         const response = await fetch(API_BACKEND_URL, {
             method: 'POST',
@@ -250,7 +245,6 @@ async function callAI(payload) {
             throw new Error(`Error desde el servidor: ${errorData.message || 'Error desconocido'}`);
         }
 
-        // El backend ya devuelve el JSON listo para usar.
         return await response.json();
 
     } catch (error) {

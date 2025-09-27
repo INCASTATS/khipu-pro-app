@@ -12,9 +12,7 @@ export default async function handler(req, res) {
         }
 
         // Paso 3: Obtener tu clave de API secreta desde las variables de entorno de Vercel
-        // ¡Esta línea usa de forma segura la clave que configuraste en el Paso 1!
         const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-        
         if (!GEMINI_API_KEY) {
             console.error("La clave de API de Gemini no está configurada en las variables de entorno.");
             return res.status(500).json({ message: 'Error de configuración del servidor.' });
@@ -30,7 +28,6 @@ export default async function handler(req, res) {
                 }]
             }],
             generationConfig: {
-                // Forzamos a Gemini a que intente devolver una respuesta con formato JSON
                 responseMimeType: "application/json",
             }
         };
@@ -55,7 +52,6 @@ export default async function handler(req, res) {
         const data = await geminiResponse.json();
         const jsonText = data.candidates[0].content.parts[0].text;
         
-        // Devolvemos el JSON ya parseado
         res.status(200).json(JSON.parse(jsonText));
 
     } catch (error) {
