@@ -17,19 +17,18 @@ export default async function handler(req, res) {
             console.error("La clave de API de Gemini no está configurada en las variables de entorno.");
             return res.status(500).json({ message: 'Error de configuración del servidor.' });
         }
-
+        
         // Paso 4: Construir la URL y el cuerpo para la petición a la API de Gemini
+        // Se usa la versión 'v1' que es la estable y compatible con el modelo
         const url = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-pro-latest:generateContent?key=${GEMINI_API_KEY}`;
 
+        // El cuerpo de la petición es simple, sin el 'generationConfig' que causaba el error
         const requestBody = {
             contents: [{
                 parts: [{
                     text: prompt
                 }]
-            }],
-            generationConfig: {
-                responseMimeType: "application/json",
-            }
+            }]
         };
 
         // Paso 5: Llamar a la API de Gemini
@@ -50,8 +49,11 @@ export default async function handler(req, res) {
 
         // Paso 7: Extraer, parsear y devolver la respuesta exitosa al frontend
         const data = await geminiResponse.json();
+        
+        // La IA responde con el JSON dentro de un campo de texto, así que lo extraemos
         const jsonText = data.candidates[0].content.parts[0].text;
         
+        // Devolvemos el JSON ya parseado para que logic.js lo use directamente
         res.status(200).json(JSON.parse(jsonText));
 
     } catch (error) {
